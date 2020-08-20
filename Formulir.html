@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <title> Formulir </title>
+</head>
+
+<body bgcolor="Gray">
+    <h1 align="center"><b>Latihan Formulir</b></h1>
+    <div align="center">
+        <fieldset style="width: 600px">
+            <form>
+                <table border="0" cellspacing="2" cellpadding="6" bgcolor="white">
+                    <tr>
+                        <td rowspan="12"></td>
+                        <td width="125px"><label for="name">Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Masukan Username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password">Password</label></td>
+                        <td>:</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tanggalahir">Tanggal Lahir</label></td>
+                        <td>:</td>
+                        <td><input type="date" value="mm/dd/yyyy"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kelamin">Jenis Kelamin</label></td>
+                        <td>:</td>
+                        <td><input type="radio" name="kelamin" value="lakilaki">Laki-Laki
+                            <input type="radio" name="kelamin" value="perempuan">Perempuan</td>
+                    </tr>
+                    <tr>
+                        <td><label for="notel">No Telepon</label></td>
+                        <td>:</td>
+                        <td><input type="number" placeholder="Masukan No Telepon"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Asal">Asal Kota</label></td>
+                        <td>:</td>
+                        <td><select>
+							<option value="Bandung">Bandung</option>
+							<option value="Purwokerto" selected="select">Purwokerto</option>
+							<option value="Depok">Depok</option>
+							<option value="Jakarta">Jakarta</option>
+							<option value="Semarang">Semarang</option>
+							<option value="Baturaden">Baturaden</option>
+							<option value="Cilacap">Cilacap</option>
+							<option value="Sampang">Sampang</option>
+						</select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat</label></td>
+                        <td>:</td>
+                        <td><textarea rows=9 cols="22" placeholder="Silahkan Katakan isi alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hobi">Hobi</label></td>
+                        <td>:</td>
+                        <td><input type="checkbox" name="hobi" value="membacabuku">Membaca Buku
+                            <input type="checkbox" name="hobi" checked="check" value="menulis">Menulis
+                            <input type="checkbox" name="hobi" checked="check" value="traveling">Traveling</td>
+                    </tr>
+                    <tr>
+                        <td><label for="makanan">Makanan Favorit</label></td>
+                        <td>:</td>
+                        <td><input type="text" list="makanan"></td>
+                        <datalist id="makanan">
+							<option value="Burger "></option>
+							<option value="Pizza "></option>
+							<option value="Soto "></option>
+							<option value="Mie "></option>
+							<option value="Sate "></option>
+							<option value="Ikan "></option>
+						</datalist>
+                    </tr>
+                    <tr align="right">
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" value="Submit">
+                            <input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <button><a href="">Next Page</a></button>
+    </div>
+</body>
+
+</html>
